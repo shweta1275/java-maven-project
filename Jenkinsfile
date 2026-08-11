@@ -5,14 +5,14 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
-                sh 'mvn clean compile'
+                sh '/opt/homebrew/bin/mvn clean compile'
             }
         }
 
         stage('Test') {
             steps {
                 echo 'Testing...'
-                sh 'mvn test'
+                sh '/opt/homebrew/bin/mvn test'
             }
         }
 
